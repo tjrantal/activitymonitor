@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+
+    tools:context="timo.home.activityMonitor.ActivityMonitor" >
+ 		<!--Add raw data view -->
+		<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+       android:id="@+id/rawView"/>
+		<!--Add activity pattern (MAD) data view -->
+		<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+       android:id="@+id/activityPlot"/>
+	 	<!--Add histogram of the day -->
+	 			<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+       android:id="@+id/activityHistogram"/>
+   		 
+ 	<!--Separator-->
+ 	<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+
+       
+    	
+  		<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+		     <Button android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_weight="1"
+		             android:text="@string/mStartTime"
+		             android:id="@+id/mStartTime"
+		             android:textStyle="bold" />
+		    <Button android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_weight="1"
+		             android:text="@string/mStopTime"
+		             android:id="@+id/mStopTime"
+		             android:textStyle="bold" />
+		 </LinearLayout> 	
+    	
+    	
+		 <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+  	 		<Button android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="@string/mTimerButton"
+             android:id="@+id/mTimerButton"
+             android:textStyle="bold" />
+			<ToggleButton 
+    			android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+				android:textOn="Reminder On"
+    			android:textOff="Reminder Off"
+             android:id="@+id/mRemindToggle"
+             android:textStyle="bold" />
+		 </LinearLayout> 
+   		 
+   		 
+		<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        		<Button android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="@string/mHistory"
+             android:id="@+id/mHistory"
+             android:textStyle="bold" />
+        
+		     <Button android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="@string/mStoButton"
+             android:id="@+id/mStopButton"
+             android:textStyle="bold" />
+             
+          
+             
+
+	 </LinearLayout> 
+       
+</LinearLayout>

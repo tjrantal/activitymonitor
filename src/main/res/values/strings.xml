@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ActivityReminder</string>
+    <string name="title_activity_main">ActivityReminder</string>
+    <string name="mStoButton">Shutdown Reminder</string>
+    <string name="mStartTime">Start Reminding</string>
+    <string name="mStopTime">Stop Reminding</string>
+    <string name="mTimerButton">Timer duration</string>
+    <string name="mHistory">Visualise Activities</string>
+    <string name="mDaysButton">Pick days</string>
+    <string name="mDayStartTime">From</string>
+    <string name="mDayStopTime">To</string>
+    <string name="mVisualise">Visualise chosen</string>
+    <string name="mCancel">Cancel</string>
+    <string name="write_permission_required">"App requires file write permission"</string>
+  	 <string name="disable_battery_optimisation">"Disable battery optimisations for this app"</string>
+
+</resources>
