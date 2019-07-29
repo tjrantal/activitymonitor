@@ -246,7 +246,7 @@ public class ImuCaptureService extends Service{
                  getResources().getString(R.string.app_name),
                  NotificationManager.IMPORTANCE_DEFAULT
          );
-
+			serviceChannel.setSound( null, null );	//Turn of notification sound
          NotificationManager manager = getSystemService(NotificationManager.class);
          manager.createNotificationChannel(serviceChannel);
      }
